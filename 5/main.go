@@ -6,9 +6,10 @@ import (
 	"time"
 )
 
-var n int
+var n int // количество секунд
 var wg sync.WaitGroup
 
+// printSecond - печатает число, которое получает через канал
 func printSecond(ch chan int) {
 	defer wg.Done()
 
@@ -16,6 +17,7 @@ func printSecond(ch chan int) {
 		fmt.Println(i)
 	}
 }
+
 func main() {
 	n = 5
 	ch := make(chan int)
