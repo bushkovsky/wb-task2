@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-var n int // количество секунд
+var n int // количество секунд f
 var wg sync.WaitGroup
 
 // printSecond - печатает число, которое получает через канал
