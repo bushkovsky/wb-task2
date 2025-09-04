@@ -31,3 +31,5 @@ func main() {
 	fmt.Println(findUniqe("abCdefAaf"))
 	fmt.Println(findUniqe("aabcd"))
 }
+
+// diff
